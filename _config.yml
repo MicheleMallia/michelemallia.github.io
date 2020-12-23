@@ -1,0 +1,42 @@
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+disable_disk_cache: true
+timezone: "Europe/Rome"
+encoding: "utf-8"
+
+gems:
+  - jekyll-bootstrap-sass
+
+paginate: 5
+paginate_path: "/page:num/"
+
+sass:
+    sass_dir: _sass
+
+sass:
+    load_paths:
+        - _sass
+        - node_modules
+
+exclude: []
+include: [".htaccess", "node_modules"]

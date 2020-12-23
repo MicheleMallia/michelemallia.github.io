@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row justify-content-center">        
+        <div class="col-12 text-center">
+            <div class="section post titolo">
+                <h1>{{ page.title }}</h1>
+                <p>{{ page.date | date_to_string }} - {{ page.author | capitalize}}</p>
+            </div>                        
+            <div class="section content-post">  
+                {{ content }}
+            </div> 
+            <div class="section go-back">
+                <a href="javascript:history.back()">↩ Torna indietro</a>
+            </div>                                           
+        </div>  
+    </div>    
+</div>

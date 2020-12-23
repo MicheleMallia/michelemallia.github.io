@@ -1,0 +1,30 @@
+---
+layout: default
+title: Home
+header: /assets/images/header/header.png
+---
+
+<div class="container">
+    <div class="row justify-content-center">        
+        <div class="col-12 text-center">        
+          <div class="section last-titles text-center">          
+            <h1>Ultimi articoli:</h1>            
+        </div>  
+        <div class="section latest-post">
+          <ul>
+            {% for post in site.posts %}
+              <li class="flex_list">
+                <div class="left">
+                  <img src="{{post.thumb}}" />
+                </div>
+                <div class="right">
+                  <h2><a href="{{ post.url }}" class=title-post>{{ post.title }}</a></h2>
+                  <p class="subtitle-post">{{ post.post_description | strip_html | strip_newlines | truncate: 256 }}</p>
+                </div>                
+              </li>
+            {% endfor %}
+          </ul>
+        </div> 
+    </div>    
+  </div>
+</div>

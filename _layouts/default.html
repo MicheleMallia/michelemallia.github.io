@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+    <script src='{{ "/assets/js/jquery.min.js " | prepend: site.baseurl }}'></script>
+    <script>
+      function async(u, c) {
+          var d = document, t = 'script',
+              o = d.createElement(t),
+              s = d.getElementsByTagName(t)[0];
+          o.src = u;
+          if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+          s.parentNode.insertBefore(o, s);
+      }
+    </script>  
+    <script>      
+      async('{{ "/assets/js/jquery.tagclouds.js" | prepend: site.baseurl }}', function () {
+          $.fn.tagcloud.defaults = {
+              //size: {start: 1, end: 1, unit: 'em'},
+              color: { start: '#878274', end: '#8a3234' },
+          };
+          $('#tag_cloud a').tagcloud();
+      })
+    </script>
+    <script src='{{ "/assets/js/tags.js " | prepend: site.baseurl }}'></script>    
+    {% feed_meta %}
+    {% seo %}
+  </head>
+  <body>    
+    {% include header.html %}
+    {% include navigation.html %}    
+    {{ content }}
+    {% include footer.html%}
+  </body>
+</html>

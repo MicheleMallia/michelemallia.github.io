@@ -1,0 +1,362 @@
+//@import "bootstrap/scss/bootstrap";
+
+/* START FONT */
+
+@font-face{
+    font-family: 'Pulpo-Black';
+    src: url('../fonts/Pulpo-Black.ttf');
+}
+
+@font-face{
+
+    font-family: 'Pulpo-Regular';
+    src: url('../fonts/Pulpo-Regular.ttf');
+}
+
+@font-face{
+
+    font-family: 'Pulpo-Light';
+    src: url('../fonts/Pulpo-Light.ttf');
+}
+
+@font-face{
+
+    font-family: 'StardosStencil-Regular';
+    src: url('../fonts/StardosStencil-Regular.ttf');
+}
+
+@font-face{
+
+    font-family: 'StardosStencil-Bold';
+    src: url('../fonts/StardosStencil-Bold.ttf');
+}
+
+/* END FONT */
+
+/* START HEADER */
+
+.header {
+    max-height: 415px;
+}
+
+.header > .container {
+    overflow: hidden;
+    max-height: 415px;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-right: 0 !important;
+    width: 100%;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 0!important;
+    max-width: none !important;
+}
+
+.headerImg {
+    width: 100%;
+    filter: brightness(70%);
+    
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.centered > h1 {
+    font-family: 'Pulpo-Black';
+    font-size: 118px;
+    color: #e8e8e8;
+    text-shadow: 4px 4px 4px  #000000; 
+}
+
+/* END HEADER */
+
+
+/* START NAVBAR */
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.navbar {    
+    font-family: 'Pulpo-Black';
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.navbar-brand {
+    font-size: 32px !important;    
+}
+
+.navbar-nav {
+    font-size: 24px !important;    
+}
+
+.hidden-spacer {
+    height: 72px;
+    background-color: #e8e8e8;
+}
+
+.navbar-toggler {
+    background-color: #fefefe !important;
+}
+
+/* END NAVBAR */
+
+
+/* START BODY */
+
+body {
+    background-color: #e8e8e8 !important;
+    color: #383838 !important;
+}
+
+.container {
+    background-color: white;
+    margin-bottom: 10%;
+}
+
+.avatar{
+    max-width: 320px;
+    border-radius: 50%;
+    margin: 20%;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+@media (max-width: 1199.98px) { 
+    .avatar {
+        max-width: 250px;
+        margin-bottom: 0 !important;
+    }
+}
+
+.section.last-titles,
+.section.tag-list {    
+    padding-bottom: 0;    
+}
+
+.section.last-titles > h1{
+    font-family: 'StardosStencil-Bold';  
+    text-shadow: 4px 4px 4px  #d4d4d4;  
+    font-size: 78px;
+    color: #383838;
+}
+
+.section.go-back a{
+    font-family: 'Pulpo-Black';
+    font-size: 32px;
+    color: #383838;
+}
+
+.section.titolo,
+.section.content-post {
+    padding-top: 0;
+}
+
+.section.post.titolo {
+    padding-top: 10% !important;
+}
+
+.section.titolo > h1 {
+    font-family: 'Pulpo-Black';  
+    text-shadow: 4px 4px 4px  #d4d4d4;  
+    font-size: 78px;
+    color: #383838;
+}
+
+.section.titolo > p {
+    font-family: 'StardosStencil-Regular';  
+    text-shadow: 4px 4px 4px  #d4d4d4;  
+    font-size: 28px;
+    color: #706f6f;
+}
+
+.subtitle-post{   
+    font-family: 'Pulpo-Light'; 
+    color: #706f6f;
+    text-shadow: 4px 4px 4px  #d4d4d4;  
+}
+
+.title-post {
+    font-family: 'StardosStencil-Bold';
+    //text-shadow: 4px 4px 4px  #d4d4d4;  
+    font-size: 48px !important;
+    color: #383838;
+}
+
+.tag-title > h1{
+    font-family: 'Pulpo-Black';
+    text-shadow: 4px 4px 4px  #d4d4d4;  
+    font-size: 48px !important;
+    color: #383838;
+}
+
+.section.tag-title {
+    padding: 0;
+    padding-bottom: 5%;
+}
+
+.section {
+    font-family: 'Pulpo-Light';
+    font-size: 24px;
+    text-align: justify;    
+    padding: 10%;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+li{
+    padding-bottom: 40px;
+}
+
+.flex_list {
+    display: flex;
+}
+
+.left {
+    width: 25%;
+    max-height: 550px;
+}
+
+.left > img {
+    width: 100%;
+}
+
+.right {
+    width: 60%;
+    margin-left: 30px;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-right: auto;
+}
+
+.capolettera::first-letter {
+    font-family: "Pulpo-Black";
+    text-transform: capitalize;
+    float: left;
+    font-size: 140px;
+    line-height: 0.9;
+    margin: 0.1em 0.1em 0.2em 0;
+}
+
+.about-section {
+
+    padding-bottom: 10%;
+}
+
+.listing-seperator{
+    font-weight: 900;
+    font-size: 44px;
+    font-family: 'Pulpo-Black';
+}
+
+section .post-preview {
+    padding-top: 20px;
+    
+}
+
+section .post-preview a {
+    color: #383838 !important;
+}
+
+section .post-preview h2 {
+    font-weight: 600;
+}
+
+.mini-post-list section {
+    padding-top: 10%; 
+}
+/* END BODY */
+
+
+/* START TAG CLOUD */
+
+#tag_cloud {
+    font-family: 'StardosStencil-Bold';
+}
+
+#tag_cloud a,
+#tag_cloud .tag {
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    font-size: 18px;
+    border: none;
+    line-height: 42px;
+    margin: 0 2px;
+    margin-bottom: 12px;
+    background: #383838;
+}
+#tag_cloud a:hover,
+#tag_cloud .tag:hover,
+#tag_cloud a:active,
+#tag_cloud .tag:active,
+#tag_cloud a.focus,
+#tag_cloud .tag.focus {
+  background-color: #8a3234 !important;
+}
+#tag_cloud a.focus,
+#tag_cloud .tag.focus {
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px, rgba(0, 0, 0, 0.239216) 0 1px 4px;
+}
+#tag_cloud a.tag-button--all,
+#tag_cloud .tag.tag-button--all {
+  font-weight: 700;
+  color: #dedede !important;
+}
+#tag_cloud a.tag-button--all:hover,
+#tag_cloud .tag.tag-button--all:hover,
+#tag_cloud a.tag-button--all:active,
+#tag_cloud .tag.tag-button--all:active,
+#tag_cloud a.tag-button--all.focus,
+#tag_cloud .tag.tag-button--all.focus {
+  background-color: #8a3234 !important;
+}
+
+.tags {
+    margin-bottom: -5px;
+  }
+  .tags.tags-sup a,
+  .tags.tags-sup .tag {
+    padding: 0 15px 0 20px;
+  }
+  .tags a,
+  .tags .tag {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 999em;
+    padding: 0 10px 0 10px;
+    color: #ffffff;
+    line-height: 24px;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 1px;
+    margin-bottom: 6px;
+    cursor: pointer;
+  }
+  .tags a > sup,
+  .tags .tag > sup {
+    margin-left: -2px;
+    font-weight: 700;
+  }
+  .tags a:hover,
+  .tags .tag:hover,
+  .tags a:active,
+  .tags .tag:active {
+    color: white;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+  }
+/* END TAG CLOUD */
+
+footer {
+
+    font-family: 'Pulpo-Black';
+}

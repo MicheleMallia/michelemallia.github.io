@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="container">
+    <img class="headerImg" src="{{page.header}}"/>    
+      <div class="centered">
+        {% if page.url == "/" %}                    
+        <h1>Blog!</h1>              
+        {% elsif page.url == "/about.html" %}
+        <h1>About</h1>
+        {% elsif page.url == "/archivio.html" %}
+        <h1>Archivio</h1>
+        {% else %}
+        <h1>Post</h1>
+        {% endif %}
+      </div>    
+  </div>   
+</header>
