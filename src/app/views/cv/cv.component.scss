@@ -15,7 +15,8 @@
     }
 
     .work-experience li::after,
-    .study-experience li::after {
+    .study-experience li::after,
+    .publications-experience li::after {
         content: "";
         position: absolute;
         top: 0px;
